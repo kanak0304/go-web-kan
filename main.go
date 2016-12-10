@@ -1,20 +1,20 @@
 package main
 
 import (
-  "os"
-  "log"
-  "fmt"
-  "net/http"
+	"fmt"
+	"log"
+	"net/http"
+	"os"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-  fmt.Fprintf(w, "Hello, World v3")
+	fmt.Fprintf(w, "Hello, World v3")
 }
 
 func main() {
-  http.HandleFunc("/", handler)
-  err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
-  if err != nil {
-     log.Fatal("ListenAndServe:", err)
-  }
+	http.HandleFunc("/", handler)
+	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
+	if err != nil {
+		log.Fatal("ListenAndServe:", err)
+	}
 }

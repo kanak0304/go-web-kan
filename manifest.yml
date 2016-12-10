@@ -4,4 +4,4 @@ applications:
   memory: 64M
   buildpack: go_buildpack 
   env:
-   GO15VENDOREXPERIMENT: 0
+    GO15VENDOREXPERIMENT: 0
