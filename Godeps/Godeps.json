@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/kanak0304/go-web-kan",
+	"ImportPath": "go-web-kan",
 	"GoVersion": "go1.6",
 	"GodepVersion": "v75",
 	"Deps": []
