@@ -3,6 +3,5 @@ applications:
 - name: go-web-kan
   memory: 64M
   buildpack: go_buildpack 
-  env:
-    GOVERSION: go1.6
-    GO15VENDOREXPERIMENT: 1
+#  env:
+#    GO15VENDOREXPERIMENT: 1
