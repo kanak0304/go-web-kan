@@ -1,0 +1,7 @@
+---
+applications:
+- name: go-web-kan
+  memory: 64M
+  buildpack: go_buildpack 
+  env:
+      GOPACKAGENAME: go-web-kan
