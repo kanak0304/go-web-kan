@@ -1,5 +1,5 @@
 {
-	"ImportPath": "go-web-kan",
+	"ImportPath": ".",
 	"GoVersion": "go1.6",
 	"GodepVersion": "v75",
 	"Deps": []
