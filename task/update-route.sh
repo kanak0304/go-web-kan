@@ -21,6 +21,6 @@ cf unmap-route go-web-kan cfapps.io --hostname go-web-kan
 
 cf unmap-route go-web-kan-new cfapps.io --hostname go-web-kan-new
 
-cf delete go-web-kan -fr
+cf delete go-web-kan -f
 
 cf rename go-web-kan-new go-web-kan
