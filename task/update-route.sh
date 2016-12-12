@@ -13,7 +13,7 @@ cf apps |  grep -i go-web-kan
 
 cf routes | grep -i go-web-kan
 
-cf map-route go-web-app-new cfapps.io --hostname go-web-kan
+cf map-route go-web-kan-new cfapps.io --hostname go-web-kan
 
 cf routes | grep -i go-web-kan
 
