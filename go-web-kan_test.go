@@ -15,7 +15,7 @@ func Test_handler(t *testing.T) {
 	res := httptest.NewRecorder()
 	handler(res, req)
 
-	exp := "Hello, World v6"
+	exp := "Hello, World v7"
 	act := res.Body.String()
 	if exp != act {
 		t.Fatalf("Expected %s gog %s", exp, act)
