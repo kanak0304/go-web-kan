@@ -1,23 +1,23 @@
 package main
 
 import (
-    "net/http"
-    "net/http/httptest"
-    "testing"
+	"net/http"
+	"net/http/httptest"
+	"testing"
 )
 
 func Test_handler(t *testing.T) {
-    req, err := http.NewRequest("GET", "/", nil)
-    if err != nil {
-        t.Fatal(err)
-    }
+	req, err := http.NewRequest("GET", "/", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
 
-    res := httptest.NewRecorder()
-    handler(res, req)
+	res := httptest.NewRecorder()
+	handler(res, req)
 
-    exp := "Hello, World v3"
-    act := res.Body.String()
-    if exp != act {
-        t.Fatalf("Expected %s gog %s", exp, act)
-    }
+	exp := "Hello, World v6"
+	act := res.Body.String()
+	if exp != act {
+		t.Fatalf("Expected %s gog %s", exp, act)
+	}
 }
