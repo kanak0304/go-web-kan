@@ -1,6 +1,6 @@
 ---
 applications:
-- name: go-web-kan
+- name: go-web-kan-new
   memory: 64M
   buildpack: go_buildpack 
 #  env:
