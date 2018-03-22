@@ -5,7 +5,7 @@ set -xe
 pwd
 env
 
-cf api https://api.cfapps.kanpcf.com --skip-ssl-validation
+cf api https://api.sys.kanpcf.com --skip-ssl-validation
 cf login -u kan -p password -o biz_div1 -s dev
 #cf api https://api.run.pivotal.io --skip-ssl-validation
 #cf login -u knakamura@pivotal.io -p passw0rd -o APJ -s Development
