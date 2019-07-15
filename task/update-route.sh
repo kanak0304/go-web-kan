@@ -5,22 +5,20 @@ set -xe
 pwd
 env
 
-cf api https://api.sys.kanpcf.com --skip-ssl-validation
-cf login -u kan -p password -o biz_div1 -s dev
-#cf api https://api.run.pivotal.io --skip-ssl-validation
-#cf login -u knakamura@pivotal.io -p passw0rd -o APJ -s Development
+cf api https://api.sys.pas-g.kanlab.jp  --skip-ssl-validation
+cf login -u user_a -p password -o demo -s dev01
 
 cf apps |  grep -i go-web-kan
 
 cf routes | grep -i go-web-kan
 
-cf map-route go-web-kan-new cfapps.kanpcf.com --hostname go-web-kan
+cf map-route go-web-kan-new apps.pas-g.kanlab.jp --hostname go-web-kan
 
 cf routes | grep -i go-web-kan
 
-cf unmap-route go-web-kan cfapps.kanpcf.com --hostname go-web-kan
+cf unmap-route go-web-kan apps.pas-g.kanlab.jp --hostname go-web-kan
 
-cf unmap-route go-web-kan-new cfapps.kanpcf.com --hostname go-web-kan-new
+cf unmap-route go-web-kan-new apps.pas-g.kanlab.jp --hostname go-web-kan-new
 
 cf delete go-web-kan -f
 
